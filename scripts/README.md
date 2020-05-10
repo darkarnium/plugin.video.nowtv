@@ -7,24 +7,34 @@ module which allows unpacking and packing of ASARs.
 It should be noted that these patchers will only work with known versions of
 the given artifacts.
 
-## Patch Loader
+## Dependencies
+
+Dependencies for these scripts have been kept to a minimum. However, there are
+still a few which must be installed before they can be used:
+
+```
+pip install -r requirements.txt
+```
+
+## Patch Loader (`patch_loader.py`)
 
 This script will patch the specified `NOW TV Player.exe` in order to remove the
 signature check used to validate the ASAR. This is required so that modified
 ASARs can be loaded, which is required in order to patch the UX related
-concerns covered in the main project [README.md](../README.md).
+concerns covered in the main project [README.md](../README.md#UX).
 
-It should be noted that this patch opens up the ASAR to being modified on disk.
-This may open up the ASAR to being modified to execute malicious code by some
-rouge process or a malicious actor with access to the local machine.
-
-This patch is simply NOPing out the `jz` instruction after the method which
-appears to be responsible for loading and validating the ASAR signature file
-(`.sig`).
+This patch is simply NOPing out the `jz` instruction after the call to the
+method which appears to be responsible for loading and validating the ASAR
+signature file (`.sig`).
 
 ![Loader Patch](../images/Loader-Check.png?raw=true)
 
-### Patch ASAR
+**Please Note:** It should be noted that this patch opens up the ASAR to being
+modified on disk. This could allow for modification of the ASAR by by some
+rouge process or a malicious actor which could result in malicious code
+execution.
+
+## Patch ASAR (`patch_asar.py`)
 
 This script will attempt to perform the following steps:
 
