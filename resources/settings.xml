@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="username" label="32001" type="text" default=""/>
+    <setting id="password" label="32002" type="text" option="hidden" default=""/>
+    <setting 
+        id="launcher"
+        label="32003"
+        type="executable"
+        default="%APPDATA%\NOW TV\NOW TV Player\NOW TV Player.exe" />
+</settings>

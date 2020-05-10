@@ -1,0 +1,15 @@
+--- a/app/dist/src/electron.js
++++ b/app/dist/src/electron.js
+@@ -7,10 +7,11 @@
+ let cipherText;
+ 
+ try {
++  plainText = fs.readFileSync(path.resolve(process.resourcesPath, 'app.asar/dist/src/bundle.plain.js'));
+   cipherText = fs.readFileSync(path.resolve(process.resourcesPath, 'app.asar/dist/src/bundle.js'));
+   const dec = decipher(cipherText);
+ 
+-  sourceAsString = dec.toString('utf8');
++  sourceAsString = plainText.toString('utf8');
+ } catch (e) {
+   process.exit(1);
+ }
