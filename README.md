@@ -1,5 +1,5 @@
 ![Latest Release](https://img.shields.io/github/v/release/darkarnium/plugin.video.nowtv)
-![Python application](https://github.com/darkarnium/plugin.video.nowtv/workflows/Python%20application/badge.svg?branch=master)
+![Python application](https://github.com/darkarnium/plugin.video.nowtv/workflows/style/badge.svg?branch=master)
 ![License](https://img.shields.io/github/license/darkarnium/plugin.video.nowtv)
 
 ## NOW TV for Kodi
