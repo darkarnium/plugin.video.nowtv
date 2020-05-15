@@ -26,8 +26,9 @@ Please be aware that this add-on is currently only supported by Kodi
 
 ## Known Issues.
 
-Please refer to both `KNOWNISSUES.md` and the GitHub Issues page for this project
-before opening issues :)
+Please refer to both [`KNOWNISSUES.md`](KNOWNISSUES.md) and the
+[GitHub Issues](https://github.com/darkarnium/plugin.video.nowtv/issues) page
+for this project before opening issues :)
 
 ## Installation
 
