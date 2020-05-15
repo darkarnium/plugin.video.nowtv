@@ -24,6 +24,11 @@ This plugin has been tested and is confirmed working on Kodi "Leia" (18.X).
 Please be aware that this add-on is currently only supported by Kodi
 [running on Windows](#linux-or-macos-support).
 
+## Known Issues.
+
+Please refer to both `KNOWNISSUES.md` and the GitHub Issues page for this project
+before opening issues :)
+
 ## Installation
 
 **Please see the 'dependencies' section below first!**
